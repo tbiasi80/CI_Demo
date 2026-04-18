@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Works on my machine.');
+  const msg = 'Works on my machine.';
+  console.log('Did we get here?');
+  res.send(msg);
 });
 
 module.exports = app;
